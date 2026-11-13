@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100d10" />
+  <title>Velvet & Threads — Gothic Accessories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#100d10;--panel:#191419;--panel2:#211a20;--cream:#eee5dc;--muted:#b8a9ad;--rose:#b77b86;--line:#49363e}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--cream);font-family:'DM Sans',sans-serif} a{color:inherit;text-decoration:none} img{display:block;width:100%;object-fit:cover}
+    .announcement{background:#291d25;color:#e9cbd0;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+    header{height:78px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12;background:#100d10ee;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
+    .logo{font-family:'Cormorant Garamond',serif;font-size:29px;letter-spacing:2px}.logo span{color:var(--rose)} nav{display:flex;gap:34px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#d4c6c8}nav a:hover{color:var(--rose)}
+    .menu{display:none;background:none;border:1px solid var(--line);color:var(--cream);padding:8px 11px;font-size:18px}
+    .hero{min-height:590px;display:grid;grid-template-columns:1fr 1fr;background:#171116}.hero-copy{padding:90px 9% 80px 14%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.eyebrow{color:var(--rose);font-size:10px;letter-spacing:4px;text-transform:uppercase}.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(54px,6vw,88px);font-weight:400;line-height:.92;margin:24px 0}.hero h1 em{color:#c18b95;font-weight:400}.hero p{color:var(--muted);font-size:14px;line-height:1.9;max-width:390px}.btn{display:inline-block;margin-top:25px;padding:14px 25px;border:1px solid var(--rose);color:#f0dce0;font-size:10px;letter-spacing:2px;text-transform:uppercase;transition:.25s}.btn:hover{background:var(--rose);color:#160f13}.hero-image{min-height:590px;position:relative}.hero-image img{height:100%;position:absolute;inset:0;filter:brightness(.76)}.hero-image:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#171116 0%,transparent 35%),linear-gradient(0deg,#100d10aa,transparent 45%)}
+    section{padding:88px 8%}.section-head{text-align:center;margin:0 auto 44px}.section-head .eyebrow{display:block}.section-head h2{font:500 clamp(38px,4vw,54px) 'Cormorant Garamond',serif;margin:12px 0}.section-head p{color:var(--muted);font-size:13px}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.product{background:var(--panel);border:1px solid #ffffff0d;transition:transform .25s,border-color .25s}.product:hover{transform:translateY(-5px);border-color:#8b5966}.product img{height:310px;filter:brightness(.88)}.product-info{padding:20px 20px 23px}.product-info h3{font:500 25px 'Cormorant Garamond',serif;margin:0 0 7px}.product-info p{font-size:12px;color:var(--muted);margin:0 0 17px}.product-info a{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#d9a8b0;border-bottom:1px solid #80545f;padding-bottom:5px}
+    .mood{background:var(--panel);display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.mood img{height:470px}.mood h2{font:500 clamp(42px,5vw,62px)/.98 'Cormorant Garamond',serif;margin:18px 0}.mood p{color:var(--muted);font-size:13px;line-height:2;max-width:480px}
+    .note{text-align:center;background:#241820;padding:65px 20px}.note h2{font:500 42px 'Cormorant Garamond',serif;margin:0 0 12px}.note p{color:var(--muted);font-size:13px;line-height:1.8}
+    footer{padding:45px 8% 25px;text-align:center;border-top:1px solid #ffffff14}.footer-logo{font:30px 'Cormorant Garamond',serif;letter-spacing:2px}.footer-links{display:flex;justify-content:center;gap:25px;margin:20px 0;color:var(--muted);font-size:11px;letter-spacing:1px}.copyright{font-size:10px;color:#887a80;margin-top:28px}
+    @media(max-width:800px){header{padding:0 5%;height:70px}.menu{display:block}nav{display:none;position:absolute;top:69px;left:0;right:0;background:#171116;padding:22px 7%;flex-direction:column;gap:22px;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 8% 65px}.hero-image{min-height:380px}.hero-image:after{background:linear-gradient(0deg,#100d10,transparent 40%)}section{padding:68px 6%}.products{grid-template-columns:repeat(2,1fr);gap:15px}.product img{height:240px}.mood{grid-template-columns:1fr;gap:30px}.mood img{height:340px}}
+    @media(max-width:520px){.logo{font-size:25px}.products{grid-template-columns:1fr}.product img{height:340px}.hero h1{font-size:62px}.footer-links{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <div class="announcement">A little darkness. A lot of detail.</div>
+  <header>
+    <a class="logo" href="#home">VELVET <span>&</span> THREADS</a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#shop" onclick="closeMenu()">Shop</a><a href="#mood" onclick="closeMenu()">Our mood</a><a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home" style="padding:0">
+      <div class="hero-copy"><span class="eyebrow">Jewellery • Charms • Details</span><h1>Wear your<br><em>dark side.</em></h1><p>For the ones who find beauty in the unusual. Discover statement pieces, delicate details and accessories with a little edge.</p><a class="btn" href="#shop">Explore the collection</a></div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1400&q=85" alt="Dark elegant jewellery displayed on a model" /></div>
+    </section>
+
+    <section id="shop">
+      <div class="section-head"><span class="eyebrow">Handpicked for you</span><h2>The Collection</h2><p>Little details. Big personality.</p></div>
+      <div class="products">
+        <article class="product"><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85" alt="Celestial star inspired jewellery"/><div class="product-info"><h3>Celestial Star Set</h3><p>A little sparkle from another universe.</p><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Enquire on Instagram ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1635767798638-3665a9b2a1b5?auto=format&fit=crop&w=900&q=85" alt="Gothic silver cross earrings"/><div class="product-info"><h3>Gothic Cross Earrings</h3><p>Classic silver with a darker twist.</p><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Enquire on Instagram ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85" alt="Layered dark silver necklace"/><div class="product-info"><h3>Midnight Cross Necklace</h3><p>A statement piece for every day.</p><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Enquire on Instagram ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85" alt="Red heart charm jewellery"/><div class="product-info"><h3>Crimson Heart Charm</h3><p>A romantic detail with a bold side.</p><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Enquire on Instagram ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85" alt="Silver chain accessory"/><div class="product-info"><h3>Spiderweb Chain Belt</h3><p>Made to finish your favourite outfit.</p><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Enquire on Instagram ↗</a></div></article>
+        <article class="product"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85" alt="Decorative charms and jewellery"/><div class="product-info"><h3>Dark Romance Phone Charms</h3><p>A tiny accessory that says a lot.</p><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Enquire on Instagram ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="mood" id="mood">
+      <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=85" alt="Close-up of elegant statement jewellery" />
+      <div><span class="eyebrow">Our mood</span><h2>Not made to<br>blend in.</h2><p>Velvet & Threads is for self-expression through the little things. Think moody tones, silver details, romantic shapes and pieces that make an outfit feel completely yours.</p><p>Find the piece that feels like you — whether that's subtle, bold, celestial or a little mysterious.</p><a class="btn" href="#contact">Get in touch</a></div>
+    </section>
+    <section class="note" id="contact"><span class="eyebrow">Let's connect</span><h2>Found your favourite?</h2><p>For prices, availability and orders, send us a message on Instagram.<br>We'd love to help you find your next favourite detail.</p><a class="btn" href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Message us on Instagram ↗</a></section>
+  </main>
+  <footer><div class="footer-logo">VELVET <span style="color:var(--rose)">&</span> THREADS</div><div class="footer-links"><a href="#shop">Shop</a><a href="#mood">Our mood</a><a href="#contact">Contact</a><a href="https://www.instagram.com/_kavya_ka_tadka/" target="_blank" rel="noopener">Instagram</a></div><div class="copyright">© 2026 Velvet & Threads. All rights reserved.</div></footer>
+  <script>function closeMenu(){document.querySelector('nav').classList.remove('open')}</script>
+</body>
+</html>
